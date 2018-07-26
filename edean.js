@@ -1,4 +1,4 @@
-$("#begin").on("click", function () {
-    $("#char1").removeClass("display");
-    $("#begin").addClass("display");
+$("#createCharacter").on("click", function () {
+    $("#characterSelect").removeClass("display-none");
+    $("#createCharacter").addClass("display-none");
 });

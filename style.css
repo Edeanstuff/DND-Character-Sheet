@@ -1,12 +1,15 @@
-.display {
+.display-none {
     display: none;
 }
+
 .center {
     text-align:center;
 }
+
 .border {
     border: 1px black solid;
 }
+
 .classinfo {
     float:right;
 }
