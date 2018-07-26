@@ -27,13 +27,21 @@ function characterSelection() {
             width: "375px",
             height: "375px"
         }).attr({
-            "src": characterArray[i]
-        });
+            "src": characterArray[i],
+        }).addClass("data-character");
         $newColumn4.append($newImg);
         $newColumn8.append($newCardHeader, $newCardBody)
         $newRow.append($newColumn4, $newColumn8);
         $("#characterSelection").append($newBr1, $newRow);
     }
+
+    characterOnClick();
+}
+
+function characterOnClick() {
+    $(".data-character").on("click", function() {
+        
+    });
 }
 
 characterSelection();
