@@ -6,10 +6,10 @@ function characterSelection() {
     var $newBr1 = $("<br>");
     var $newBr2 = $("<br>");
     var $newRow = $("<div>").addClass("row border");
-    var $newColumn4 = $("<div>").addClass("col-md-4").css({
+    var $newColumn4 = $("<div>").addClass("col-lg-4").css({
         padding: 0
     });
-    var $newColumn8 = $("<div>").addClass("col-md-8").css({
+    var $newColumn8 = $("<div>").addClass("col-lg-8").css({
         padding: 0
     });
     var $newCardHeader = $("<div>").addClass("card-header text-center font-weight-bold");
@@ -24,8 +24,8 @@ function characterSelection() {
         $newCardBody.append(characterArray[i]);
         characterArray.shift();
         var $newImg = $("<img>").css({
-            width: "375px",
-            height: "375px"
+            width: "100%",
+            height: "100%"
         }).attr({
             "src": characterArray[i],
         }).addClass("data-character");
