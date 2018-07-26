@@ -1,69 +1,36 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>DND</title>
+        <title>Character Creation</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="assests/css/style.css">
     </head>
 
     <body>
-        <div class="jumbotron jumbtron-fluid text-center font-weight-bold border-bottom rounded-0" style="background-color:rgba(0,0,0,.03)">
-            <h1>Dungeons & Dragons</h1>
+        <div class="jumbotron jumbtron-fluid text-center font-weight-bold border-bottom rounded-0" style="background-color:rgba(0,0,0,.03); margin-bottom:0;">
+            <h1>Dungeons & Dragons Character Creation</h1>
         </div>
         <div class="container">
             <div class="row">
-                <div id="begin">Create Character</div>
+                <div class="col-12">
+                    <div class="text-center font-weight-bold" id="createCharacter"><br>Create Character</div>
+                </div>
             </div>
         </div>
-        <div id="char1" class="display">
+        <div class="display-none" id="characterSelect">
             <br>
-            <br>
-            <br>
-            <div class="center" id="class">Select a class!</div>
-                 
-                <div class="row">
-                    <div class="col-5 margin">
-                        <div class="row border">
-                            <div class="col-4">
-                                    <img class="card-img-top" src="https://media-waterdeep.cursecdn.com/avatars/thumbnails/6/369/420/618/636272705936709430.png">
-                            </div>
-                        <div class="" style="width: 22rem;">
-                            <div class="card-body">
-                                <h5 class="card-title">Bard</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                        </div>
+            <div class="container">
+                <div class"row">
+                    <div class="col-12">
+                        <div class="text-center font-weight-bold" id="selectClass">Select a Class!</div>
                     </div>
                 </div>
-                        
-                    
-                        <div class="col-5">
-                            <div class="row border">
-                                <div class="col-4">
-                                        <img class="card-img-top" src="https://media-waterdeep.cursecdn.com/avatars/thumbnails/6/369/420/618/636272705936709430.png">
-                                </div>
-                                <div class="col-6">
-                                <div class="" style="width: 22rem;">
-                                    <h5 class="card-title">Bard</h5>
-                                    <div class="card-text">
-                                            Bards of the College of Lore know something about most things, collecting bits of knowledge from sources as diverse as scholarly tomes and peasant tales. 
-                                            Whether singing folk ballads in taverns or...</div>
-                                    <a href="#" class="btn btn-primary">Learn More</a>
-                                </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>    
-                    </div>
-                </div>
+                <div id="characterSelection"></div>
             </div>
-        </div>  
-    </div>
-       
+        </div>
         <script src="https://code.jquery.com/jquery.js"></script>
-        <script type="text/javascript" src="utilities.js"></script>
-        <script type="text/javascript" src="colin.js"></script>
-        <script type="text/javascript" src="edean.js"></script>
+        <script type="text/javascript" src="assests/javascript/utilities.js"></script>
+        <script type="text/javascript" src="assests/javascript/DNDCharacter.js"></script>
+        <script type="text/javascript" src="assests/javascript/creationInteraction.js"></script>
     </body>
 </html>
